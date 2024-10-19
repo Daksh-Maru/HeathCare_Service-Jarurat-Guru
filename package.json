@@ -4,7 +4,8 @@
   "description": "A node.js powered healthcare platform providing secure user authentication and management of healthcare services using RESTful Api's.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,11 @@
     "body-parser": "^1.20.3",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
+    "heathcare_service-jarurat-guru": "file:",
+    "mongodb": "^6.9.0",
     "mongoose": "^8.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
   }
 }
