@@ -6,10 +6,10 @@ router.post("/api/services", async (req, res) => {
     console.log(req.body);
     const { name, description, price } = req.body;
 
-    if (!name || !description || !price) {
+    if (!name || !description || !price || price <= 0) {
         return res.status(400).json({
             success: false,
-            message: "Please provide all required fields",
+            message: "Please provide all required fields and ensure price is a positive number",
         });
     }
 
